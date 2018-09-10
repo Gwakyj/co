@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>퇴직금 계산기</title>
+</head>
+<body>
+	<div style="width: 700px; height: 900px; margin: auto; margin-top: 150px;">
+	<input type="text" placeholder="당신의 1일 평균 임금" size="30" id="money">원
+	<input type="text" placeholder="회사를 다닌 기간" size="30" id="day">일
+	<button id="but">나의 퇴직금 계산</button>
+	<div id ="output" style="width: 400px; height: 400px; background: yellow; color: red;
+	text-align: center; line-height: 400px; margin-left: 100px; margin-top: 30px;">당신의 퇴직금은?
+	
+	<script type="text/javascript">
+		
+		but.onclick = function(){
+
+			var we = money.value * 30 * day.value;
+			var finalOutput = "당신의 퇴직금은" + we + "입니다.";
+
+			output.innerHTML = finalOutput;
+			 
+
+		}
+
+	</script>
+</div>
+</div>
+
+</body>
+</html>
